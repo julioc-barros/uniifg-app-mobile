@@ -3,4 +3,12 @@ from kivy.properties import ObjectProperty
 from kivy.core.window import Window
 
 class TelaInicial(MDScreen):
-    pass
+    
+    def conhecer(self):
+        print("Clicado")
+        pass
+
+    def logar(self):
+        self.manager.current = 'login'
+        print("Clicado")
+        pass

@@ -1,9 +1,10 @@
 <TelaInicial>
     name: 'inicio'
+
     FloatLayout:
         Image:
-            source: 'Images/UNIFG.webp'
-            size_hint: (0.6, 1)
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
             pos_hint: {'center_x': 0.5, 'center_y': 0.94}
 
         Image:
@@ -37,7 +38,8 @@
             md_bg_color: (233/255, 129/255, 57/255, 1)
             elevation: 2
             size_hint: (0.7, 0.085)
-            pos_hint: {'center_x': 0.5, 'center_y': 0.3}
+            pos_hint: {'center_x': 0.5, 'center_y': 0.28}
+            on_press: root.conhecer()
 
         MDRectangleFlatButton: 
             id: 'sim-aluno'
@@ -48,5 +50,6 @@
             md_bg_color: (255/255, 255/255, 255/255, 1)
             elevation: 2
             size_hint: (0.7, 0.085)
-            pos_hint: {'center_x': 0.5, 'center_y': 0.18}
+            pos_hint: {'center_x': 0.5, 'center_y': 0.16}
+            on_press: root.logar()
 
