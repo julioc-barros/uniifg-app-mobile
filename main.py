@@ -15,6 +15,7 @@ class LiveApp(MDApp, App):
         os.path.join(os.getcwd(), "Screens/screenmanager.kv"),
         os.path.join(os.getcwd(), "Screens/tela_inicial/telainicial.kv"),
         os.path.join(os.getcwd(), "Screens/tela_login/telalogin.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu1/telamenu1.kv"),
     }
 
     # class to watch from *.py files
@@ -22,6 +23,7 @@ class LiveApp(MDApp, App):
         "MainScreenManager": "Screens.screenmanager",
         "TelaInicial": "Screens.tela_inicial.telainicial",
         "TelaLogin": "Screens.tela_login.telalogin",
+        "TelaMenu1": "Screens.tela_menu1.telamenu1",
     }
 
     # auto reload path

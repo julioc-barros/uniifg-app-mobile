@@ -1,0 +1,124 @@
+<TelaMenu1>
+    name: 'menu1'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'Escolha uma das opções para realizar seu atendimento no aplicativo da UniFG'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 22
+            bold: False
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.75}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'btn_atendimento'
+            text: 'Atendimento'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.6}
+            on_press: root.btn_atendimento()
+
+        MDRaisedButton: 
+            id: 'btn_disciplinas'
+            text: 'Disciplinas'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.6}
+            on_press: root.btn_disciplinas()
+
+        MDRaisedButton: 
+            id: 'btn_acessos'
+            text: 'Acessos'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.5}
+            on_press: root.btn_acessos()
+
+        MDRaisedButton: 
+            id: 'btn_meucurso'
+            text: 'Meu curso'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.5}
+            on_press: root.btn_meucurso()
+
+        MDRaisedButton: 
+            id: 'btn_solicitacoes'
+            text: 'Solicitações'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.4}
+            on_press: root.btn_solicitacoes()
+
+        MDRaisedButton: 
+            id: 'btn_instalacoes'
+            text: 'Instalações'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.4}
+            on_press: root.btn_instalacoes()
+
+        MDRaisedButton: 
+            id: 'btn_financeiro'
+            text: 'Financeiro'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.3}
+            on_press: root.btn_financeiro()
+
+        MDRaisedButton: 
+            id: 'btn_negociacao'
+            text: 'Negociação'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.3}
+            on_press: root.btn_negociacao()
+
+        MDRectangleFlatButton: 
+            id: 'btn_outrasinfo'
+            text: 'Outras Informações'
+            font_size: 22
+            text_color: (28/255, 28/255, 28/255, 1)
+            line_color: (233/255, 129/255, 57/255, 1)
+            md_bg_color: (255/255, 255/255, 255/255, 1)
+            elevation: 1
+            size_hint: (0.68, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.16}
+            on_press: root.btn_outrasinfo()
+
+        
