@@ -1,5 +1,5 @@
-<TelaMenu1>
-    name: 'menu1'
+<Tela_Menu_Principal>
+    name: 'tela_menu_principal'
 
     FloatLayout:
         Image:
@@ -50,7 +50,7 @@
             text_color: (1,1,1,1)
             md_bg_color: (233/255, 129/255, 57/255, 1)
             elevation: 1
-            size_hint: (0.35, 0.06)
+            size_hint: (0.36, 0.06)
             pos_hint: {'center_x': 0.28, 'center_y': 0.5}
             on_press: root.btn_acessos()
 
@@ -113,12 +113,20 @@
             id: 'btn_outrasinfo'
             text: 'Outras Informações'
             font_size: 22
-            text_color: (28/255, 28/255, 28/255, 1)
             line_color: (233/255, 129/255, 57/255, 1)
-            md_bg_color: (255/255, 255/255, 255/255, 1)
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
             elevation: 1
             size_hint: (0.68, 0.065)
-            pos_hint: {'center_x': 0.5, 'center_y': 0.16}
+            pos_hint: {'center_x': 0.5, 'center_y': 0.185}
             on_press: root.btn_outrasinfo()
 
-        
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 22
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.08}
+            size_hint: (0.27, 0.05)
+            on_press: root.voltar()

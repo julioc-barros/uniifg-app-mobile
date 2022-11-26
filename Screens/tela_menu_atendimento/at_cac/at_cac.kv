@@ -1,0 +1,73 @@
+<Tela_Menu_At_CAC>
+    name: 'tela_menu_atendimento_at_cac'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'CAC'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDLabel: 
+            text: 'Escolha uma das opções:'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 25
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.69}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'btn_at_cac_unidades'
+            text: 'Unidades'
+            font_size: 20
+            bold: True
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.65, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.55}
+            on_press: root.btn_at_cac_unidades()
+
+        MDRaisedButton: 
+            id: 'btn_at_cac_contato'
+            text: 'Contato'
+            font_size: 20
+            bold: True
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.65, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.46}
+            on_press: root.btn_at_cac_contato()
+
+        MDRaisedButton: 
+            id: 'btn_at_cac_ingresso'
+            text: 'Ingresso UniFG'
+            font_size: 20
+            bold: True
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.65, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.37}
+            on_press: root.btn_at_cac_ingresso()
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

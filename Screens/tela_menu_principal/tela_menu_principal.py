@@ -2,11 +2,10 @@ from kivymd.uix.screen import MDScreen
 from kivy.properties import ObjectProperty
 from kivy.core.window import Window
 
-class TelaMenu1(MDScreen):
+class Tela_Menu_Principal(MDScreen):
     
     def btn_atendimento(self):
-        print("btn_atendimento")
-        # self.manager.current = ''
+        self.manager.current = 'tela_menu_atendimento'
         pass
     
     def btn_disciplinas(self):
@@ -38,6 +37,8 @@ class TelaMenu1(MDScreen):
         pass
     
     def btn_outrasinfo(self):
-        print("btn_outrasinfo")
         pass
     
+    def voltar(self):
+        self.manager.current = 'inicio'
+        pass

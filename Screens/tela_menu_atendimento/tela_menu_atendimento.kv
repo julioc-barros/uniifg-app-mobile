@@ -1,0 +1,129 @@
+<Tela_Menu_Atendimento>
+    name: 'tela_menu_atendimento'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'ATENDIMENTO'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'btn_at_caa'
+            text: 'CAA'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.70}
+            on_press: root.btn_at_caa()
+
+        MDRaisedButton: 
+            id: 'btn_at_coordenação'
+            text: 'Coordenação'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.70}
+            on_press: root.btn_at_coordenação()
+
+        MDRaisedButton: 
+            id: 'btn_at_cac'
+            text: 'CAC'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.36, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.6}
+            on_press: root.btn_at_cac()
+
+        MDRaisedButton: 
+            id: 'btn_at_biblioteca'
+            text: 'Biblioteca'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.6}
+            on_press: root.btn_at_biblioteca()
+
+        MDRaisedButton: 
+            id: 'btn_at_Agendamento'
+            text: 'Agendamento'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.5}
+            on_press: root.btn_at_Agendamento()
+
+        MDRaisedButton: 
+            id: 'btn_at_carreiras'
+            text: 'Carreiras'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.5}
+            on_press: root.btn_at_carreiras()
+
+        MDRaisedButton: 
+            id: 'btn_at_professor'
+            text: 'Professor'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.28, 'center_y': 0.4}
+            on_press: root.btn_at_professor()
+
+        MDRaisedButton: 
+            id: 'btn_at_sms_ligacao'
+            text: 'SMS e Ligação'
+            font_size: 19
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            elevation: 1
+            size_hint: (0.35, 0.06)
+            pos_hint: {'center_x': 0.72, 'center_y': 0.4}
+            on_press: root.btn_at_sms_ligacao()
+
+        MDLabel: 
+            text: 'Escolha uma das opções'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 22
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.12}
+            size_hint: (0.27, 0.05)
+            on_press: root.voltar()

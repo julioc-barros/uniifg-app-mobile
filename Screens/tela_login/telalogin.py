@@ -18,7 +18,7 @@ class TelaLogin(MDScreen):
         if (usuario == 'admin') and (senha == 'admin'):
             self.ids["'user'"].text = ''
             self.ids["'password'"].text = ''
-            self.manager.current = 'inicio'
+            self.manager.current = 'tela_menu_principal'
         else: 
             self.ids["'user'"].text = ''
             self.ids["'password'"].text = ''
