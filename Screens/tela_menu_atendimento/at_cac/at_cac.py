@@ -6,13 +6,13 @@ import webbrowser
 class Tela_Menu_At_CAC(MDScreen):
 
     def btn_at_cac_unidades(self):
-        pass
-    
+        self.manager.current = 'tela_menu_atendimento_at_cac_unidade'
+
     def btn_at_cac_contato(self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_at_cac_contato'
     
     def btn_at_cac_ingresso(self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_at_cac_ingresso'
     
 
     def voltar(self):

@@ -1,0 +1,40 @@
+<Tela_Menu_At_CAC_Contato>
+    name: 'tela_menu_atendimento_at_cac_contato'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'CONTATO'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDLabel: 
+            text: 'Você pode entrar em contato com a CAC pelos contatos abaixo: Telefone: 4020-9085'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 25
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

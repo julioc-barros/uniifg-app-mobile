@@ -1,0 +1,40 @@
+<Tela_Menu_At_Professor_Presencial>
+    name: 'tela_menu_atendimento_at_professor_presencial'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'PRESENCIAL'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDLabel: 
+            text: 'Professores responsáveis por disciplinas presenciais, neste momento de pandemia estão com atendimento via e-mail, sendo necessário verificar com a Central de atendimento ao Docente – CAD , o contato pelo seguinte e-mail: cad@unifg.edu.br O setor tem prazo de até 02 dias úteis para responder e-mail.'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 22
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

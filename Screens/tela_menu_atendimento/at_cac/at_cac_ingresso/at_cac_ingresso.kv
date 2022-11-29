@@ -1,0 +1,40 @@
+<Tela_Menu_At_CAC_Ingresso>
+    name: 'tela_menu_atendimento_at_cac_ingresso'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'INGRESSO UNIFG'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDLabel: 
+            text: 'Você pode ingressar na UniFG através da sua nota do ENEM, vestibular, prova agendada, transferência ou segunda graduação. Dá uma olhadinha no site para escolher a melhor opção e se inscrever. Caso precise de auxilio, pode entrar em contato com os contatos: 98142-859/ 99197-4577/ 98173-0509 /4020-9085.'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 22
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

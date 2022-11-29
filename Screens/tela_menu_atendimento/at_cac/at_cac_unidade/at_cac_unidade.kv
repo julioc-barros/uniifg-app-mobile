@@ -1,0 +1,48 @@
+<Tela_Menu_At_CAC_Unidades>
+    name: 'tela_menu_atendimento_at_cac_unidade'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'UNIDADE'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDLabel: 
+            text: 'Piedade | Boa Vista'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 25
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.68}
+            size_hint: (0.8, 1)
+  
+        MDLabel: 
+            text: 'Atendimento de segunda a sexta das 08:00 as 17:00h e aos sábados de 08:00 as 12:00h, através dos seguintes contatos:4020-9085 /98142-8597/ 99197-4577 / 98173-0509.'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 22
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.45}
+            size_hint: (0.85, 1)
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

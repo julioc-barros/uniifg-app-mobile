@@ -19,7 +19,17 @@ class LiveApp(MDApp, App):
 
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/tela_menu_atendimento.kv"),
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_caa/at_caa.kv"),
+
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_cac/at_cac.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_cac/at_cac_unidade/at_cac_unidade.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_cac/at_cac_contato/at_cac_contato.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_cac/at_cac_ingresso/at_cac_ingresso.kv"),
+
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_agendamento/at_agendamento.kv"),
+
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_professor/at_professor.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_professor/online/online.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_professor/presencial/presencial.kv"),
     }
 
     # class to watch from *.py files
@@ -31,7 +41,18 @@ class LiveApp(MDApp, App):
 
         "Tela_Menu_Atendimento": "Screens.tela_menu_atendimento.tela_menu_atendimento",
         "Tela_Menu_At_CAA":"Screens.tela_menu_atendimento.at_caa.at_caa",
+
         "Tela_Menu_At_CAC":"Screens.tela_menu_atendimento.at_cac.at_cac",
+        "Tela_Menu_At_CAC_Unidades":"Screens.tela_menu_atendimento.at_cac.at_cac_unidade.at_cac_unidade",
+        "Tela_Menu_At_CAC_Contato":"Screens.tela_menu_atendimento.at_cac.at_cac_contato.at_cac_contato",
+        "Tela_Menu_At_CAC_Ingresso":"Screens.tela_menu_atendimento.at_cac.at_cac_ingresso.at_cac_ingresso",
+
+        "Tela_Menu_At_Agendamento":"Screens.tela_menu_atendimento.at_agendamento.at_agendamento",
+
+        "Tela_Menu_At_Professor":"Screens.tela_menu_atendimento.at_professor.at_professor",
+        "Tela_Menu_At_Professor_Online":"Screens.tela_menu_atendimento.at_professor.online.online",
+        "Tela_Menu_At_Professor_Presencial":"Screens.tela_menu_atendimento.at_professor.presencial.presencial",
+
     }
 
     # auto reload path

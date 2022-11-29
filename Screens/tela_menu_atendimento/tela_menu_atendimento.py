@@ -17,17 +17,17 @@ class Tela_Menu_Atendimento(MDScreen):
         pass
 
     def btn_at_Agendamento (self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_at_agendamento'
 
     def btn_at_carreiras (self):
         pass
 
     def btn_at_professor (self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_at_professor'
 
     def btn_at_sms_ligacao (self):
         pass
 
     def voltar(self):
-        self.manager.current = 'tela_menu_principal'
+        self.manager.current = 'login'
         pass

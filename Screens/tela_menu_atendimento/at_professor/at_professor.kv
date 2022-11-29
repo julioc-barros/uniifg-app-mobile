@@ -1,5 +1,5 @@
-<Tela_Menu_At_CAC>
-    name: 'tela_menu_atendimento_at_cac'
+<Tela_Menu_At_Professor>
+    name: 'tela_menu_atendimento_at_professor'
 
     FloatLayout:
         Image:
@@ -13,7 +13,7 @@
             pos_hint: {'center_x': 0.5, 'center_y': 0.38}
 
         MDLabel: 
-            text: 'CAC'
+            text: 'PROFESSOR'
             color: 255/255, 255/255, 255/255, 1
             font_size: 30
             bold: True
@@ -22,45 +22,34 @@
             size_hint: (0.8, 1)
 
         MDLabel: 
-            text: 'Escolha uma das opções:'
+            text: 'Qual a modalidade da disciplina do docente?'
             color: 255/255, 255/255, 255/255, 1
-            font_size: 25
+            font_size: 20
             halign: 'center'
             pos_hint: {'center_x': 0.5, 'center_y': 0.69}
             size_hint: (0.8, 1)
 
         MDRaisedButton: 
-            id: 'btn_at_cac_unidades'
-            text: 'Unidades'
+            id: 'btn_at_agendamento_online'
+            text: 'Online'
             font_size: 20
             bold: True
             text_color: (1,1,1,1)
             md_bg_color: (233/255, 129/255, 57/255, 1)
             size_hint: (0.65, 0.065)
             pos_hint: {'center_x': 0.5, 'center_y': 0.55}
-            on_press: root.btn_at_cac_unidades() 
+            on_press: root.btn_at_agendamento_online()
 
         MDRaisedButton: 
-            id: 'btn_at_cac_contato'
-            text: 'Contato'
+            id: 'btn_at_agendamento_presencial'
+            text: 'Presencial'
             font_size: 20
             bold: True
             text_color: (1,1,1,1)
             md_bg_color: (233/255, 129/255, 57/255, 1)
             size_hint: (0.65, 0.065)
             pos_hint: {'center_x': 0.5, 'center_y': 0.46}
-            on_press: root.btn_at_cac_contato()
-
-        MDRaisedButton: 
-            id: 'btn_at_cac_ingresso'
-            text: 'Ingresso UniFG'
-            font_size: 20
-            bold: True
-            text_color: (1,1,1,1)
-            md_bg_color: (233/255, 129/255, 57/255, 1)
-            size_hint: (0.65, 0.065)
-            pos_hint: {'center_x': 0.5, 'center_y': 0.37}
-            on_press: root.btn_at_cac_ingresso()
+            on_press: root.btn_at_agendamento_presencial()
 
         MDRaisedButton: 
             id: 'voltar'
