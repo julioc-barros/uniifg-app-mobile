@@ -18,7 +18,6 @@ class Tela_Menu_At_Biblioteca(MDScreen):
         self.manager.current = "tela_menu_atendimento_at_biblioteca_multa"
         
     
-
     def voltar(self):
         self.manager.current = 'tela_menu_atendimento'
         

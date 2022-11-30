@@ -38,6 +38,8 @@ class LiveApp(MDApp, App):
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/cadastro/cadastro.kv"),
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/locacao/locacao.kv"),
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/multa/multa.kv"),
+
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_carreiras/at_carreiras.kv"),
     }
 
     # class to watch from *.py files
@@ -69,7 +71,7 @@ class LiveApp(MDApp, App):
         "Tela_Menu_At_Biblioteca_Locacao":"Screens.tela_menu_atendimento.at_biblioteca.locacao.locacao",
         "Tela_Menu_At_Biblioteca_Multa":"Screens.tela_menu_atendimento.at_biblioteca.multa.multa",
 
-
+        "Tela_Menu_At_Carreiras":"Screens.tela_menu_atendimento.at_carreiras.at_carreiras",
 
     }
 
