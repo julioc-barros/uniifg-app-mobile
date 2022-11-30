@@ -1,0 +1,72 @@
+<Tela_Menu_At_Biblioteca>
+    name: 'tela_menu_atendimento_at_biblioteca'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'BIBLIOTECA'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'btn_at_biblioteca_unidade'
+            text: 'Unidade'
+            font_size: 20
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.6, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.62}
+            on_press: root.btn_at_biblioteca_unidade() 
+
+        MDRaisedButton: 
+            id: 'btn_at_biblioteca_cadastro'
+            text: 'Cadastro'
+            font_size: 20
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.6, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.52}
+            on_press: root.btn_at_biblioteca_cadastro()
+
+        MDRaisedButton: 
+            id: 'btn_at_biblioteca_locacao'
+            text: 'Locação de Livro'
+            font_size: 20
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.6, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.42}
+            on_press: root.btn_at_biblioteca_locacao()
+
+        MDRaisedButton: 
+            id: 'btn_at_biblioteca_multa'
+            text: 'Multa Biblioteca'
+            font_size: 20
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.6, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.32}
+            on_press: root.btn_at_biblioteca_multa()
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

@@ -1,0 +1,40 @@
+<Tela_Menu_At_Biblioteca_Unidade>
+    name: 'tela_menu_atendimento_at_biblioteca_unidade'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'UNIDADE'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDLabel: 
+            text: 'Neste momento de isolamento social, o atendimento está via e-mail ( biblioteca@unifg.edu.br ) de segunda a sexta das 08:00 as 18:00 e aos sábados de 08:00 as 12:00. Prazo de retorno: 02 dias úteis. O acesso a biblioteca é apenas para alunos vinculados, concluintes da IES, funcionários e professores da IES.'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 20
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

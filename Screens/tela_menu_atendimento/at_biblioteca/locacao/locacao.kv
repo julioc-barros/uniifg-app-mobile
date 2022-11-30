@@ -1,0 +1,40 @@
+<Tela_Menu_At_Biblioteca_Locacao>
+    name: 'tela_menu_atendimento_at_biblioteca_locacao'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'LOCAÇÃO DE LIVRO'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDLabel: 
+            text: 'Aluno de graduação pode locar até 5 livros. Diante do atual cenário não estamos com locação de livro presencialmente, temos a biblioteca online, um ícone que fica dentro do seu portal do aluno. Lá você consegue acessar diversos livros de casa! Em caso de dúvida: *biblioteca@unifg.edu.br*'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 21
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()

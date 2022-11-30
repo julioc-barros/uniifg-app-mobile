@@ -8,13 +8,13 @@ class Tela_Menu_Atendimento(MDScreen):
         self.manager.current = 'tela_menu_atendimento_at_caa'
 
     def btn_at_coordenação (self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_at_coordenacao'
 
     def btn_at_cac (self):
         self.manager.current = 'tela_menu_atendimento_at_cac'
 
     def btn_at_biblioteca (self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_at_biblioteca'
 
     def btn_at_Agendamento (self):
         self.manager.current = 'tela_menu_atendimento_at_agendamento'

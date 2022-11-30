@@ -30,6 +30,14 @@ class LiveApp(MDApp, App):
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_professor/at_professor.kv"),
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_professor/online/online.kv"),
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_professor/presencial/presencial.kv"),
+
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_coordenacao/at_coordenacao.kv"),
+
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/at_biblioteca.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/unidade/unidade.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/cadastro/cadastro.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/locacao/locacao.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/multa/multa.kv"),
     }
 
     # class to watch from *.py files
@@ -52,6 +60,16 @@ class LiveApp(MDApp, App):
         "Tela_Menu_At_Professor":"Screens.tela_menu_atendimento.at_professor.at_professor",
         "Tela_Menu_At_Professor_Online":"Screens.tela_menu_atendimento.at_professor.online.online",
         "Tela_Menu_At_Professor_Presencial":"Screens.tela_menu_atendimento.at_professor.presencial.presencial",
+
+        "Tela_Menu_At_Coordenacao":"Screens.tela_menu_atendimento.at_coordenacao.at_coordenacao",
+
+        "Tela_Menu_At_Biblioteca":"Screens.tela_menu_atendimento.at_biblioteca.at_biblioteca",
+        "Tela_Menu_At_Biblioteca_Unidade":"Screens.tela_menu_atendimento.at_biblioteca.unidade.unidade",
+        "Tela_Menu_At_Biblioteca_Cadastro":"Screens.tela_menu_atendimento.at_biblioteca.cadastro.cadastro",
+        "Tela_Menu_At_Biblioteca_Locacao":"Screens.tela_menu_atendimento.at_biblioteca.locacao.locacao",
+        "Tela_Menu_At_Biblioteca_Multa":"Screens.tela_menu_atendimento.at_biblioteca.multa.multa",
+
+
 
     }
 
