@@ -40,6 +40,11 @@ class LiveApp(MDApp, App):
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_biblioteca/multa/multa.kv"),
 
         os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_carreiras/at_carreiras.kv"),
+
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_sms_ligacao/at_sms_ligacao.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_sms_ligacao/soualuno/soualuno.kv"),
+        os.path.join(os.getcwd(), "Screens/tela_menu_atendimento/at_sms_ligacao/naosoualuno/naosoualuno.kv"),
+
     }
 
     # class to watch from *.py files
@@ -72,6 +77,10 @@ class LiveApp(MDApp, App):
         "Tela_Menu_At_Biblioteca_Multa":"Screens.tela_menu_atendimento.at_biblioteca.multa.multa",
 
         "Tela_Menu_At_Carreiras":"Screens.tela_menu_atendimento.at_carreiras.at_carreiras",
+
+        "Tela_Menu_At_Sms_Ligacao":"Screens.tela_menu_atendimento.at_sms_ligacao.at_sms_ligacao",
+        "Tela_Menu_At_Sms_Ligacao_Soualuno":"Screens.tela_menu_atendimento.at_sms_ligacao.soualuno.soualuno",
+        "Tela_Menu_At_Sms_Ligacao_Naosoualuno":"Screens.tela_menu_atendimento.at_sms_ligacao.naosoualuno.naosoualuno",
 
     }
 

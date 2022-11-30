@@ -20,13 +20,13 @@ class Tela_Menu_Atendimento(MDScreen):
         self.manager.current = 'tela_menu_atendimento_at_agendamento'
 
     def btn_at_carreiras (self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_at_carreiras'
 
     def btn_at_professor (self):
         self.manager.current = 'tela_menu_atendimento_at_professor'
 
     def btn_at_sms_ligacao (self):
-        pass
+        self.manager.current = 'tela_menu_atendimento_sms_ligacao'
 
     def voltar(self):
         self.manager.current = 'login'

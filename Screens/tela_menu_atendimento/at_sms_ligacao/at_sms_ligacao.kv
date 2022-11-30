@@ -1,0 +1,54 @@
+<Tela_Menu_At_Sms_Ligacao>
+    name: 'tela_menu_atendimento_sms_ligacao'
+
+    FloatLayout:
+        Image:
+            source: 'Images/UNIFG.png'
+            size_hint: (1, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.94}
+
+        Image:
+            source: 'Images/background.png'
+            size_hint: (1.5, 1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.38}
+
+        MDLabel: 
+            text: 'SMS E LIGAÇÃO'
+            color: 255/255, 255/255, 255/255, 1
+            font_size: 30
+            bold: True
+            halign: 'center'
+            pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+            size_hint: (0.8, 1)
+
+        MDRaisedButton: 
+            id: 'btn_at_sms_ligacao_soualuno'
+            text: 'Sou Aluno'
+            font_size: 20
+            bold: True
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.65, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.55}
+            on_press: root.btn_at_sms_ligacao_soualuno()
+
+        MDRaisedButton: 
+            id: 'btn_at_sms_ligacao_naosoualuno'
+            text: 'Não Sou Aluno'
+            font_size: 20
+            bold: True
+            text_color: (1,1,1,1)
+            md_bg_color: (233/255, 129/255, 57/255, 1)
+            size_hint: (0.65, 0.065)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.46}
+            on_press: root.btn_at_sms_ligacao_naosoualuno()
+
+        MDRaisedButton: 
+            id: 'voltar'
+            text: 'Voltar'
+            font_size: 21
+            text_color: (0,0,0,1)
+            md_bg_color: (1,1,1,1)
+            pos_hint: {'center_x': 0.5, 'center_y': 0.14}
+            size_hint: (0.25, 0.047)
+            on_press: root.voltar()
